@@ -1,0 +1,86 @@
+export const REVIEWS = [
+  {
+    title: "Thank you!!!",
+    content:
+      "I started noticing a difference after about two weeks. My bloating is gone, and I feel so much more energized. I always used to have a puffy face, but that's disappeared too. I think it might be because my digestion has improved, but I've also noticed my nails and hair are stronger. Really happy with the results! 🫢",
+    name: "Ruth R.",
+    picture: "user2.svg",
+    country: "New Jersey",
+    pictureFull: "/1.jpg",
+    time: "about 2 days ago",
+    product: 3,
+    stars: 5,
+  },
+  {
+    title: "I don’t look like I’m pregnant anymore…",
+    content:
+      "I used to look like I was pregnant after meals, and I can't even describe how embarrassed that made me feel. But that's completely gone now! Not only do I feel so much better, but I've also gone from 170 lbs to 143 lbs. I’m thrilled with the results!",
+    name: "Emma G.",
+    picture: "user3.svg",
+    country: "California",
+    pictureFull: "/2.jpg",
+    time: "about 3 days ago",
+    product: 6,
+    stars: 5,
+  },
+  {
+    title: "I'm so glad I gave it a try!!",
+    content:
+      "I'm almost through my third bottle, and I honestly didn't expect it to turn my life around like this! I always thought my weight was just due to age and hormones, especially since I'd tried similar colon-cleansing products without much success. This one's different. I also love that it's in capsules—no messy powders to drink. I'm so glad I gave it a try!! 🥳",
+    name: "Ava H",
+    picture: "user1.svg",
+    country: "Texas",
+    pictureFull: "/3.jpg",
+    time: "about 3 days ago",
+    product: 3,
+    stars: 5,
+  },
+  {
+    title: "Fast Shipping",
+    content:
+      "Received my order in 3 days. Can't wait to start taking it. Will update my review in a few weeks.",
+    name: "Sophia K.",
+    picture: "user1.svg",
+    country: "Florida",
+    pictureFull: "/3.jpg",
+    time: "about 5 days ago",
+    product: 1,
+    stars: 5,
+  },
+  {
+    title: "Using for a wedding",
+    content:
+      "I was using it at first for a wedding and to really honestly jumpstart my workout and I can honestly say it has really help me to lose the weight and get everything moving. I have lost up to 25 pounds and I plan to keep going",
+    name: "Mia L.",
+    picture: "user1.svg",
+    country: "New York",
+    pictureFull: "/3.jpg",
+    time: "about 7 days ago",
+    product: 3,
+    stars: 5,
+  },
+  {
+    title: "This product is worth every penny!",
+    content:
+      "I gave this as a gift to my mom, and the change in her after about five months of using it is incredible! She looks and feels so much better. I can’t recommend it enough!",
+    name: "Isabella M.",
+    picture: "user1.svg",
+    country: "Illinois",
+    pictureFull: "/3.jpg",
+    time: "about 7 days ago",
+    product: 6,
+    stars: 5,
+  },
+  {
+    title: "I feel more confident",
+    content:
+      "Once I started using Cortiway Premium, I noticed an incredible boost in energy and a reduction in hunger. I used that extra energy to start exercising regularly, and the combination has helped me lose a lot of weight. Now, I finally have my dream body, and I feel more confident than ever!",
+    name: "Amelia N.",
+    picture: "user1.svg",
+    country: "Georgia",
+    pictureFull: "/3.jpg",
+    time: "about 10 days ago",
+    product: 6,
+    stars: 5,
+  },
+];
