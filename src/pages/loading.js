@@ -9,15 +9,15 @@ import checkWhite from "../assets/icons/check-white.svg";
 import { TopNavigation } from "@/components/TopNavigation";
 import { sizes } from "@/styles/breakpoints";
 import Head from "next/head";
-import gutIcon from "../assets/icons/gut.png";
+import loading from "../assets/images/loading.png";
 
 export default function Loading() {
   const router = useRouter();
   const steps = [
     "Evaluating your answers...",
-    "Analyzing your results...",
-    "Evaluating your bacteria balance...",
-    "Building your summary...",
+    "Identifying shedding triggers...",
+    "Crafting personalized solution...",
+    "Finalizing the perfect match...",
   ];
 
   const [currentStep, setCurrentStep] = useState(0); // Track the current step
@@ -56,7 +56,7 @@ export default function Loading() {
   return (
     <>
       <Head>
-        <title>Cortiway.com - Loading... </title>
+        <title>Biopeta.com - Loading... </title>
         <meta name="description" content="Autism Outreach Community" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
@@ -64,13 +64,13 @@ export default function Loading() {
       <SmallContainer>
         <LoadingContainer>
           <Image
-            src={gutIcon}
-            alt="Gut"
+            src={loading}
+            alt="Loading"
             height={120}
             className="mx-auto mt-5"
           />
-          <h1 className="text-3xl mt-5">
-            Determining your bacteria balance...
+          <h1 className="text-2xl md:text-3xl">
+            Generating Your Dog's Custom Anti-Shedding Solution...🐾
           </h1>
           <Actions>
             {steps.map((text, index) => (

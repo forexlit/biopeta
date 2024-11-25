@@ -18,7 +18,7 @@ const Sorry = () => {
   return (
     <>
       <Head>
-        <title>Cortiway.com - Sorry Out Of Stock</title>
+        <title>Biopeta.com - Sorry Out Of Stock</title>
         <meta name="description" content="Cortiway Premium Product" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

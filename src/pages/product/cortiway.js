@@ -38,7 +38,7 @@ export default function Two() {
   return (
     <div className="">
       <Head>
-        <title>Cortiway.com - Cortiway Premium Product</title>
+        <title>Biopeta.com - Cortiway Premium Product</title>
         <meta name="description" content="Cortiway Premium Product" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

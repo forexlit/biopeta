@@ -20,7 +20,7 @@ export default function ActionPlan() {
   return (
     <>
       <Head>
-        <title>Cortiway.com - Your Action Plan </title>
+        <title>Biopeta.com - Your Action Plan </title>
         <meta name="description" content="Autism Outreach Community" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

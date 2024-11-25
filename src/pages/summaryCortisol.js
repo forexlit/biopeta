@@ -83,7 +83,7 @@ export default function Summary() {
   return (
     <>
       <Head>
-        <title>Cortiway.com - Your Calculated Score</title>
+        <title>Biopeta.com - Your Calculated Score</title>
         <meta name="description" content="Autism Outreach Community" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

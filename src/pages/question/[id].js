@@ -44,8 +44,8 @@ export default function Quiz() {
     }
 
     // ADD GENDER TO STORAGE
-    if (idInt === 9) {
-      Cookies.set("gender", answerValue, {
+    if (idInt === 4) {
+      Cookies.set("shedding", answerValue, {
         expires: 7, // Cookie will expire in 7 days
         path: "/", // Make the cookie available across the entire site
       });
@@ -69,7 +69,7 @@ export default function Quiz() {
   return (
     <>
       <Head>
-        <title>Cortiway.com - Questions</title>
+        <title>Biopeta.com - Questions</title>
         <meta name="description" content="Questions" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
@@ -108,7 +108,7 @@ export default function Quiz() {
                   key={option.value}
                   id={option.value}
                   onClick={() => toggleAnswer(option.value)}
-                  className={`flex items-center justify-between p-5 border border-gray-200  mb-2 rounded-lg cursor-pointer text-lg ${
+                  className={`flex items-center justify-between p-5 border border-gray-200  mb-2 rounded-lg cursor-pointer text-lg text-left ${
                     selectedAnswers.includes(option.value)
                       ? "bg-yellow-100"
                       : "bg-white"

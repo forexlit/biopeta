@@ -45,7 +45,7 @@ export default function ProductPage() {
   return (
     <>
       <Head>
-        <title>Cortiway.com - Fell Yourself Again</title>
+        <title>Biopeta.com - Fell Yourself Again</title>
         <meta name="description" content="Autism Outreach Community" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

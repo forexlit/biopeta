@@ -105,7 +105,7 @@ export default function ProductId() {
   return (
     <>
       <Head>
-        <title>Cortiway.com - Feel Yourself Again</title>
+        <title>Biopeta.com - Feel Yourself Again</title>
         <meta name="description" content="Autism Outreach Community" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

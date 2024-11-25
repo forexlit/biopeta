@@ -59,7 +59,7 @@ export default function ProductPage() {
   return (
     <>
       <Head>
-        <title>Cortiway.com - Cortiway Premium Supplement</title>
+        <title>Biopeta.com - Cortiway Premium Supplement</title>
         <meta name="description" content="Cortiway Premium Product" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

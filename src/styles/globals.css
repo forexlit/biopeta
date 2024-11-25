@@ -51,10 +51,10 @@ strong {
 .slick-prev:before,
 .slick-next:before {
   font-size: 35px !important;
-  color: #db2877 !important;
+  color: #1d97bd !important;
 }
 .slick-dots li.slick-active button:before {
-  color: #db2877 !important;
+  color: #1d97bd !important;
 }
 .slick-dots li {
   margin: 0 !important;
@@ -84,7 +84,7 @@ strong {
   margin-bottom: 20px;
 }
 .vertical-timeline::before {
-  background: #db2877 !important;
+  background: #1d97bd !important;
 }
 .list {
   padding: 20px;

@@ -34,84 +34,9 @@ import VideoPlayer from "./Video";
 const ReviewsWithProduct = () => {
   return (
     <div>
-      <div className="container mx-auto mb-5">
-        <div className="grid grid-cols-12 gap-2">
-          <div className="col-span-12 md:col-span-3">
-            {" "}
-            <VideoPlayer />
-          </div>
-          <div className="col-span-12 md:col-span-9">
-            <div className="bg-white p-5 rounded-lg h-full">
-              <div className="flex">
-                <Image
-                  src={verified}
-                  height={15}
-                  alt="Verified"
-                  className="mr-1"
-                />
-                <span className="text-green-600">Verified Buyer</span>
-              </div>
-              <div className="flex my-3">
-                {Array(5)
-                  .fill()
-                  .map((_, index) => {
-                    return (
-                      <Image
-                        key={index}
-                        src={starYellow}
-                        height={20}
-                        alt="star"
-                      />
-                    );
-                  })}
-              </div>
-              {/* After my 3rd baby I was sooo discouraged about the weight loss and how long it was taking for me to get back in the shape and I was talking to my friend about this and she suggested Cortiway Premium Blend to me   */}
-              <strong className="text-xl font-semibold mb-3 block">
-                "It's made all the difference!"
-              </strong>
-              "It’s seriously been so much better. I feel less bloated, I feel
-              like my digestive issues are better, and it’s been a game changer
-              for me. I honestly would recommend this to anybody who's been
-              struggling with their weight loss, especially after having kids."
-              <div className="mt-2">
-                <Image src={ba0} alt="Weight loss" height={250} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="bg-[#fdf0ec] ">
-        {/* <div className="container mx-auto">
-          <div className="grid grid-cols-12 gap-0">
-            <div className="col-span-3 md:col-span-2">
-              <Image src={ba1} alt="Weight loss" />
-            </div>
-            <div className="col-span-3 md:col-span-2">
-              <Image src={ba2} alt="Weight loss" />
-            </div>
-            <div className="col-span-3 md:col-span-2">
-              <Image src={ba3} alt="Weight loss" />
-            </div>
-            <div className="col-span-3 md:col-span-2">
-              <Image src={ba4} alt="Weight loss" />
-            </div>
-            <div className="col-span-3 md:col-span-2">
-              <Image src={ba5} alt="Weight loss" />
-            </div>
-            <div className="col-span-3 md:col-span-2">
-              <Image src={ba6} alt="Weight loss" />
-            </div>
-            <div className="col-span-3 md:hidden">
-              <Image src={ba10} alt="Weight loss" />
-            </div>
-            <div className="col-span-3 md:hidden ">
-              <Image src={ba11} alt="Weight loss" />
-            </div>
-          </div>
-        </div> */}
-
+      <div className="bg-[#ebfafe] ">
         <div className="container mx-auto mb-10">
-          <div className="grid grid-cols-12 gap-4 bg-[#ff789e] rounded-b-lg ">
+          <div className="grid grid-cols-12 gap-4 bg-[#1d97bd] rounded-b-lg ">
             <div className="col-span-12 md:col-span-3 p-5 pb-0">
               <div className="h-[130px] md:h-[200px] relative">
                 <Image
@@ -138,7 +63,7 @@ const ReviewsWithProduct = () => {
             </div>
           </div>
           <div className="flex items-center justify-center z-[-1]">
-            <div className="bg-[#ff789e] w-[50px] h-[50px] rotate-[50deg] mt-[-30px]"></div>
+            <div className="bg-[#1d97bd] w-[50px] h-[50px] rotate-[50deg] mt-[-30px]"></div>
           </div>
         </div>
         <div className="container mx-auto">
@@ -246,54 +171,6 @@ const ReviewsWithProduct = () => {
                           {review.time}
                         </div>
                       </div>
-                      {index === 0 && (
-                        <Image
-                          src={ba1}
-                          alt="Before and After"
-                          height={230}
-                          className="mt-3"
-                        />
-                      )}
-                      {index === 1 && (
-                        <Image
-                          src={ba10}
-                          alt="Before and After"
-                          height={230}
-                          className="mt-3"
-                        />
-                      )}
-                      {index === 2 && (
-                        <Image
-                          src={ba12}
-                          alt="Before and After"
-                          height={230}
-                          className="mt-3"
-                        />
-                      )}
-                      {index === 4 && (
-                        <Image
-                          src={ba13}
-                          alt="Before and After"
-                          height={230}
-                          className="mt-3"
-                        />
-                      )}
-                      {index === 5 && (
-                        <Image
-                          src={ba14}
-                          alt="Before and After"
-                          height={230}
-                          className="mt-3"
-                        />
-                      )}
-                      {index === 6 && (
-                        <Image
-                          src={ba15}
-                          alt="Before and After"
-                          height={230}
-                          className="mt-3"
-                        />
-                      )}
 
                       <p className="mt-5 font-thin">{review.content}</p>
                     </div>

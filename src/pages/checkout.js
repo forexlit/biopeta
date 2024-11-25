@@ -81,7 +81,7 @@ const Checkout = () => {
   return (
     <>
       <Head>
-        <title>Cortiway.com - Checkout</title>
+        <title>Biopeta.com - Checkout</title>
         <meta name="description" content="Cortiway Premium Product" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

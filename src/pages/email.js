@@ -70,7 +70,7 @@
 //   return (
 //     <>
 //       <Head>
-//         <title>Cortiway.com - Enter your email </title>
+//         <title>Biopeta.com - Enter your email </title>
 //         <meta name="description" content="Autism Outreach Community" />
 //         <meta name="viewport" content="width=device-width, initial-scale=1" />
 //       </Head>
@@ -215,17 +215,20 @@ export default function Email() {
   return (
     <>
       <Head>
-        <title>Cortiway.com - Enter your email </title>
-        <meta name="description" content="Autism Outreach Community" />
+        <title>Biopeta.com - Enter your email </title>
+        <meta
+          name="description"
+          content="Your Dog’s Tailored Anti-Shedding Plan is Ready! "
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <TopNavigation />
       <SmallContainer>
         <EmailContainer>
-          <h1 className="text-4xl mt-3">Your results are ready </h1>
-          <h4>
-            We will let you know when Cortiway free samples are available.
-          </h4>
+          <h1 className="text-2xl md:text-4xl mt-3">
+            Your Dog's Anti-Shedding Plan is Ready!{" "}
+          </h1>
+          <h4>Enter your email to see the results</h4>
           <Label>Your email</Label>
           <Input
             type="email"
@@ -242,7 +245,7 @@ export default function Email() {
             disabled={error || isLoading}
             isLoading={isLoading}
           >
-            Unlock my results
+            Unlock the results
           </Button>
 
           <Disclaimer>
@@ -262,7 +265,6 @@ export const EmailContainer = styled.div`
   color: ${COLORS.black};
   h1 {
     padding: 20px 0px;
-    font-family: ${FONTS.primary};
     line-height: 1.2;
     font-weight: 600;
     @media (max-width: ${sizes.sm}) {

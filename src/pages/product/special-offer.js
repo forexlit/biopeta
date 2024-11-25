@@ -56,7 +56,7 @@ export default function SpecialOffer() {
   return (
     <>
       <Head>
-        <title>Cortiway.com - Special Offer</title>
+        <title>Biopeta.com - Special Offer</title>
         <meta name="description" content="Cortiway Premium Product" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

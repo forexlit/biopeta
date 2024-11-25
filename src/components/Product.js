@@ -287,7 +287,6 @@ const Product = ({ product }) => {
             full={true}
             onClick={() => window.open(selectedOption.orderUrl)}
             id="initiate-checkout"
-            bg="#db2877"
             type="buy"
           >
             Buy now

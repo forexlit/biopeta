@@ -12,7 +12,7 @@ import delivery from "../assets/icons/shipping.svg";
 
 export default function Success() {
   const download = () => {
-    Router.push("http://download.Cortiway.com/From_Overload_to_Balance.pdf");
+    Router.push("http://download.Biopeta.com/From_Overload_to_Balance.pdf");
   };
   return (
     <SmallContainer>
@@ -42,7 +42,7 @@ export default function Success() {
         </div>
         <span>
           If you have any questions, feel free to contact us:{" "}
-          <span className="underline">info@cortiway.com</span>
+          <span className="underline">info@Biopeta.com</span>
         </span>
       </div>
     </SmallContainer>

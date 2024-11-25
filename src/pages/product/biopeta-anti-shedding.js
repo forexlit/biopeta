@@ -16,7 +16,7 @@ import { PRODUCTS, WEIGHTLOSS } from "@/content/products";
 import Product from "@/components/Product";
 import Faq from "@/components/Faq";
 
-import pr1 from "../../assets/products/colon/product-main.jpg";
+import pr1 from "../../assets/products/biopeta/1.jpg";
 import pr2 from "../../assets/products/colon/product-new.jpg";
 import pr3 from "../../assets/products/colon/product-progress.jpg";
 import pr4 from "../../assets/products/colon/product-symptoms.jpg";
@@ -39,6 +39,12 @@ import clinicallyImg from "../../assets/products/colon/clinically.jpg";
 import WithFb from "../../components/proof/WithFb";
 import WithAndWithout from "@/views/WithAndWithout";
 import Ratings from "@/components/Ratings";
+import natural from "../../assets/icons/product/natural.webp";
+import alcohol from "../../assets/icons/product/alcohol.webp";
+import paraben from "../../assets/icons/product/paraben.webp";
+import sulfate from "../../assets/icons/product/sulfate.webp";
+import cruelty from "../../assets/icons/product/cruelty.webp";
+import silicone from "../../assets/icons/product/silicone.webp";
 
 export default function Two() {
   const [selectedOption, setSelectedOption] = useState(PRODUCTS[0].options[0]);
@@ -64,7 +70,7 @@ export default function Two() {
         <meta name="description" content="Cortiway Premium Product" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className="bg-black text-white text-center p-1 md:p-2 flex items-center justify-center text-sm md:text-md">
+      <div className="bg-black text-white text-center p-2 flex items-center justify-center text-sm md:text-md">
         <div>
           <Image src={sale} alt="Sale" height={25} className="mr-4" />
         </div>
@@ -74,20 +80,39 @@ export default function Two() {
       <div className="py-0 md:py-5">
         <TopNavigation />
       </div>
-
       <div className="container mx-auto mt-0 md:mt-10">
         <div className="grid grid-cols-12 gap-4 pb-5">
           <div className="col-span-12 md:col-span-6 pr-0 md:pr-10">
             <h1 className="text-2xl md:text-5xl mb-1 md:mb-3 font-semibold">
-              <span className="text-pink-600">ULTRA potent</span> Cortiway
-              Premium Blend
+              BioPeta Anti-Shedding Solution
             </h1>
             <Ratings />
-            <h2 className="text-xl md:text-2xl mt-5 mb-5">
-              <strong>Try Cortiway Premium:</strong> Lose Weight, Boost Energy
-              And Wave Goodbye To Bloat In 2024
+            <h2 className="text-xl md:text-xl mt-5 mb-5">
+              <strong>Try BioPeta Anti-Shedding Solution:</strong> Keep Your
+              Home Fur-Free, Promote a Healthy, Shiny Coat, and Make Shedding a
+              Thing of the Past!
             </h2>
-            <div className="">
+            <div className="flex items-center my-5">
+              <div className="mr-2 md:mr-3">
+                <Image src={natural} alt="100% Natural" height={70} />
+              </div>
+              <div className="mr-2 md:mr-3">
+                <Image src={paraben} alt="Paraben free" height={70} />
+              </div>
+              <div className="mr-2 md:mr-3">
+                <Image src={cruelty} alt="Cruelty free" height={70} />
+              </div>
+              <div className="mr-2 md:mr-3">
+                <Image src={alcohol} alt="Alcohol free" height={70} />
+              </div>
+              <div className="mr-2 md:mr-3">
+                <Image src={sulfate} alt="Sulfate free" height={70} />
+              </div>
+              <div>
+                <Image src={silicone} alt="Silicone free" height={70} />
+              </div>
+            </div>
+            {/* <div className="">
               <div>
                 <span className="pr-2">✅</span> Energy Boost in 1 to 7 days
               </div>
@@ -98,7 +123,7 @@ export default function Two() {
               <div>
                 <span className="pr-2">✅</span> Reduces bloating in 5 to 7 days
               </div>
-            </div>
+            </div> */}
             <div className="mt-5">Buying Options:</div>
             <div className="grid grid-cols-12 gap-2 mt-5">
               {PRODUCTS.map((product, index) => {
@@ -119,11 +144,11 @@ export default function Two() {
                     </div>
                     <div
                       className={`border-2 ${
-                        product.popular ? " bg-[#fffae8]" : "bg-gray-50"
-                      }} p-3 rounded-xl hover:bg-gray-50 ${
+                        product.popular ? " bg-[#fffae8]" : "bg-[#f1f8ff]"
+                      }} p-3 rounded-xl hover:bg-[#f1f8ff] ${
                         selectedOption.optionId ===
                           product.options[0].optionId &&
-                        "border-black bg-gray-50"
+                        "border-[#1d97bd] bg-[#f1f8ff]"
                       }`}
                     >
                       <div className="grid grid-cols-12 gap-2 ">
@@ -131,13 +156,14 @@ export default function Two() {
                           <div
                             className={`w-4 md:w-6 h-4 md:h-6 rounded-full border ${
                               selectedOption.optionId ===
-                                product.options[0].optionId && "border-black"
+                                product.options[0].optionId &&
+                              "border-[#1d97bd]"
                             } flex items-center justify-center`}
                           >
                             <div
                               className={`w-2 md:w-3 h-2 md:h-3 rounded-full ${
                                 selectedOption.optionId ===
-                                  product.options[0].optionId && "bg-black"
+                                  product.options[0].optionId && "bg-[#1d97bd]"
                               }`}
                             ></div>
                           </div>
@@ -152,8 +178,8 @@ export default function Two() {
                           />
                         </div>
                         <div className="col-span-5">
-                          <span className="font-semibold text-sm md:text-lg">
-                            Cortiway Premium
+                          <span className=" block font-semibold text-md  leading-[1.2] mb-2">
+                            {product.title}
                           </span>
                           <span className="text-xs md:text-[15px] block">
                             {product.subtitle}
@@ -219,7 +245,7 @@ export default function Two() {
               })}
             </div>
             <div className="mt-5 ">
-              <Button bg="#db2877" type="buy" onClick={handleBuyNow}>
+              <Button type="buy" onClick={handleBuyNow}>
                 Continue to checkout
               </Button>
             </div>
@@ -264,39 +290,7 @@ export default function Two() {
                   alt="Product"
                 />
               </div>
-              <div className="relative rounded-lg">
-                <Image
-                  src={pr2}
-                  className="mx-auto px-0 md:px-10 object-cover rounded-lg"
-                  height={600}
-                  alt="Product"
-                />
-              </div>
-              <div className="relative rounded-lg">
-                <Image
-                  src={pr3}
-                  className="mx-auto px-0 md:px-10 object-cover rounded-lg"
-                  height={600}
-                  alt="Product"
-                />
-              </div>
-              <div className="relative rounded-lg">
-                <Image
-                  src={pr4}
-                  className="mx-auto px-0 md:px-10  object-cover rounded-lg"
-                  height={600}
-                  alt="Product"
-                />
-              </div>
 
-              <div className="relative rounded-lg">
-                <Image
-                  src={pr5}
-                  className="mx-auto px-0 md:px-10 object-cover rounded-lg"
-                  height={600}
-                  alt="Product"
-                />
-              </div>
               <div className="relative rounded-lg">
                 <Image
                   src={pr6}
@@ -312,79 +306,17 @@ export default function Two() {
           </div>
         </div>
       </div>
-      <div className="bg-[#fdf0ec] mt-10 py-5">
+      <div className="bg-[#1d97bd] text-white py-10 mt-10">
         <div className="container mx-auto">
-          <Covered />
-          <WithFb />
+          <h3 className="mx-auto text-center font-semibold text-3xl md:text-4xl max-w-[100%] md:max-w-[60%]">
+            Here's How It Works
+          </h3>
         </div>
+      </div>{" "}
+      <div className="flex items-center justify-center z-[-1] bg-blue-50">
+        <div className="bg-[#1d97bd] w-[50px] h-[50px] rotate-[50deg] mt-[-30px]"></div>
       </div>
-      <div className=" bg-white py-10 md:py-[100px]">
-        <div className="container mx-auto">
-          {/* <div className="">
-            <div className="grid grid-cols-12 gap-4">
-              <div className="col-span-12 md:col-span-7">
-                <h3 className="text-center md:text-left mt-5 md:mt-0 text-4xl font-semibold">
-                  It's <span className="text-pink-600">Clinically Proven</span>
-                </h3>
-                <p className="mt-10 text-lg md:text-xl">
-                  Cortiway Premium is one of the few weight loss supplements on
-                  the market that is clinically tested and proven to help with{" "}
-                  <strong>
-                    gut health, appetite control, metabolism, and weight loss…
-                  </strong>
-                </p>
-                <p className="text-lg md:text-xl my-5">...without:</p>
-                <ul className="text-lg md:text-xl">
-                  <li className="flex items-center">
-                    <div>
-                      <Image src={exred} alt="X" height={30} className="mr-2" />
-                    </div>
-                    Depriving diets
-                  </li>
-                  <li className="flex items-center my-2">
-                    <div>
-                      <Image src={exred} alt="X" height={30} className="mr-2" />
-                    </div>
-                    Intensive workouts
-                  </li>
-                  <li className="flex items-center">
-                    <div>
-                      <Image src={exred} alt="X" height={30} className="mr-2" />
-                    </div>
-                    Radical lifestyle changes
-                  </li>
-                </ul>
-                <p className="text-lg md:text-xl mt-5">
-                  With a <strong>customer satisfaction rate of over 78%</strong>
-                  , the clinical trials have proven it to be a safe and
-                  effective choice already favored by thousands of users
-                  worldwide.
-                </p>
-                <div className="mt-5">
-                  <Button
-                    bg="#db2877"
-                    onClick={() => (window.location.href = "#product")}
-                    className="mt-10"
-                    type="buy"
-                  >
-                    BUY NOW
-                  </Button>
-                </div>
-              </div>
-              <div className="col-span-12 md:col-span-5 order-first md:order-none">
-                <Image
-                  src={clinicallyImg}
-                  alt="Clinically proved"
-                  className="rounded-xl"
-                />
-              </div>
-            </div>
-          </div> */}
-          <WithAndWithout />
-        </div>
-      </div>
-
-      <div className="bg-[#fdf0ec]">
+      <div className="bg-[#ebfafe]">
         <div className="mt-0 md:my-10">
           <h3 className="text-4xl text-center max-w-[100%] md:max-w-[60%] mx-auto pt-10">
             {" "}
@@ -405,7 +337,6 @@ export default function Two() {
         <ReviewsWithProduct />
         <div className="pb-10  px-5">
           <Button
-            bg="#db2877"
             onClick={() => (window.location.href = "#product")}
             className="mx-auto mt-10"
             type="buy"
@@ -414,7 +345,6 @@ export default function Two() {
           </Button>
         </div>
       </div>
-
       <div className="bg-white">
         <div className="container mx-auto">
           <div className="pt-[50px]">

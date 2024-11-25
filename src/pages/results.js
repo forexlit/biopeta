@@ -59,7 +59,7 @@ export default function Results() {
   return (
     <>
       <Head>
-        <title>Cortiway.com - Your Calculated Score & Action Plan </title>
+        <title>Biopeta.com - Your Calculated Score & Action Plan </title>
         <meta name="description" content="Autism Outreach Community" />
         <meta
           name="viewport"
