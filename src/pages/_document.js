@@ -41,7 +41,7 @@ export default class MyDocument extends Document {
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-PKMWW8GQ');`,
+        })(window,document,'script','dataLayer','GTM-KBMDF8V3');`,
             }}
           ></Script>
 
@@ -51,22 +51,25 @@ export default class MyDocument extends Document {
             href="https://fonts.gstatic.com"
             crossOrigin="true"
           />
-          {/* <link
-            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-            rel="stylesheet"
-          /> */}
-          {/* <link
-            href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-            rel="stylesheet"
-          ></link> */}
           <link
             href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+SC:wght@100..900&display=swap"
             rel="stylesheet"
           ></link>
           <link rel="icon" href="/favicon.png" />
         </Head>
-        <Main />
-        <NextScript />
+        <body>
+          <noscript>
+            {/* Directly insert the iframe as a JSX element */}
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-KBMDF8V3"
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            />
+          </noscript>
+          <Main />
+          <NextScript />
+        </body>
       </Html>
     );
   }
