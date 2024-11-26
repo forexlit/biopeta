@@ -135,23 +135,10 @@ export default function Email() {
   const [email, setEmail] = useState("");
   const [error, setError] = useState(true);
   const [errorMessage, setErrorMessage] = useState("");
-  const [risk, setRisk] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const { finalScore } = useContext(MyContext);
 
-  const ageCookie = Cookies.get("age")?.replace(/"/g, "");
-  const genderCookie = Cookies.get("gender")?.replace(/"/g, "");
-
-  const currentWeightKg = Cookies.get("currentWeightKg")?.replace(/"/g, "");
-  const currentWeightLb = Cookies.get("currentWeightLb")?.replace(/"/g, "");
-  const goalWeightKg = Cookies.get("goalWeightKg")?.replace(/"/g, "");
-  const goalWeightLb = Cookies.get("goalWeightLb")?.replace(/"/g, "");
-  const weightMetric = Cookies.get("weightMetric")?.replace(/"/g, "");
-
-  const feetCookie = Cookies.get("feet")?.replace(/"/g, "");
-  const inchesCookie = Cookies.get("inches")?.replace(/"/g, "");
-  const height = Cookies.get("height")?.replace(/"/g, "");
-  const heightMetric = Cookies.get("heightMetric")?.replace(/"/g, "");
+  const breedCookie = Cookies.get("breed")?.replace(/"/g, "");
+  const shedCookie = Cookies.get("shedding")?.replace(/"/g, "");
 
   const router = useRouter();
 
@@ -164,16 +151,6 @@ export default function Email() {
     setError(!isValidEmail);
     setErrorMessage(isValidEmail ? "" : "Please enter a valid email address.");
   };
-
-  useEffect(() => {
-    if (finalScore >= 8) {
-      setRisk("High");
-    } else if (finalScore >= 3) {
-      setRisk("Medium");
-    } else {
-      setRisk("Low");
-    }
-  }, [finalScore]);
 
   function validateEmail() {
     if (error) {
@@ -189,19 +166,13 @@ export default function Email() {
       },
       body: JSON.stringify({
         email: email,
-        gender: genderCookie,
-        age: ageCookie,
-        height:
-          heightMetric === "cm"
-            ? height
-            : feetCookie + "ft " + inchesCookie + "in",
-        weight: weightMetric === "kg" ? currentWeightKg : currentWeightLb,
-        goalWeight: weightMetric === "kg" ? goalWeightKg : goalWeightLb,
+        breed: breedCookie,
+        shedding: shedCookie,
       }),
     };
 
     setIsLoading(true);
-    fetch(`/api/subscribe`, options)
+    fetch(`/api/save-data`, options)
       .then((response) => response.json())
       .then(() => {
         Cookies.set("email", email);
@@ -218,7 +189,7 @@ export default function Email() {
         <title>Biopeta.com - Enter your email </title>
         <meta
           name="description"
-          content="Your Dog’s Tailored Anti-Shedding Plan is Ready! "
+          content="Your Dog's Tailored Anti-Shedding Plan is Ready! "
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

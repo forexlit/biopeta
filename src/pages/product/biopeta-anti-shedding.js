@@ -17,27 +17,15 @@ import Product from "@/components/Product";
 import Faq from "@/components/Faq";
 
 import pr1 from "../../assets/products/biopeta/1.jpg";
-import pr2 from "../../assets/products/colon/product-new.jpg";
-import pr3 from "../../assets/products/colon/product-progress.jpg";
-import pr4 from "../../assets/products/colon/product-symptoms.jpg";
-import pr5 from "../../assets/products/colon/product-ingredients.jpg";
-import pr6 from "../../assets/products/colon/product-reviews.jpg";
+import pr6 from "../../assets/products/biopeta/2.jpg";
 
 import gift from "../../assets/icons/gift.png";
-import bowlIcon from "../../../public/icons/healthy.png";
-import weightIcon from "../../../public/icons/weight.png";
-import energyIcon from "../../../public/icons/hunger.png";
-import starYellow from "../../assets/icons/star-yellow.svg";
 import moneyBack from "../../assets/icons/money.png";
 import { useRouter } from "next/router";
 import shippingIcon from "../../assets/icons/shipping3.svg";
 import deliveryIcon from "../../assets/icons/delivery.svg";
 import moneyBackIcon from "../../assets/icons/money-back.svg";
 import ReviewsWithProduct from "@/components/ReviewsWithProduct";
-import exred from "../../assets/icons/letter-x.png";
-import clinicallyImg from "../../assets/products/colon/clinically.jpg";
-import WithFb from "../../components/proof/WithFb";
-import WithAndWithout from "@/views/WithAndWithout";
 import Ratings from "@/components/Ratings";
 import natural from "../../assets/icons/product/natural.webp";
 import alcohol from "../../assets/icons/product/alcohol.webp";
@@ -83,8 +71,8 @@ export default function Two() {
   return (
     <div className="bg-white">
       <Head>
-        <title>Biopeta.com - Cortiway Premium Product</title>
-        <meta name="description" content="Cortiway Premium Product" />
+        <title>Biopeta.com - Anti-Shedding Solution</title>
+        <meta name="description" content="Anti-Shedding Solution" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className="bg-black text-white text-center p-2 flex items-center justify-center text-sm md:text-md">
@@ -92,7 +80,7 @@ export default function Two() {
           <Image src={sale} alt="Sale" height={25} className="mr-4" />
         </div>
         <span>BLACK FRIDAY MONTH: </span>
-        <strong className="ml-2"> UP TO -43% OFF!</strong>
+        <strong className="ml-2"> UP TO -29% OFF!</strong>
       </div>
       <div className="py-0 md:py-5">
         <TopNavigation />
@@ -658,7 +646,7 @@ export default function Two() {
           <div className="mt-0 md:my-10 py-10">
             <div className="px-5 ">
               {" "}
-              <h3 className="text-2xl md:text-4xl font-semibold text-center max-w-[100%] md:max-w-[60%] mx-auto">
+              <h3 className="text-2xl md:text-4xl font-semibold text-center max-w-[100%] md:max-w-[50%] mx-auto">
                 Real, Verified Results: See Why Dog Oners All Over The World
                 Calls
                 <span className="text-[#1d97bd]"> BioPeta “Life Changing”</span>
@@ -687,8 +675,7 @@ export default function Two() {
             Still Not Sure?
           </h3>
           <h3 className="text-xl md:text-4xl font-semibold text-center max-w-[100%] md:max-w-[60%] mx-auto px-5">
-            Here Are The Top Questions We Get About
-            <span className="text-[#1d97bd]"> BioPeta</span>
+            Here Are The Top Questions We Get
           </h3>
           <div className="mt-10">
             <Faq />

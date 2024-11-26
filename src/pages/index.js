@@ -116,17 +116,16 @@ export default function Home() {
             <div className="col-span-12 md:col-span-6 p-0 md:p-8">
               <Image src={stars} alt="stars" />
               <h3 className="text-xl font-semibold mt-5">
-                "I never thought I will be able to wear my black dress again!"
+                "My German shepherd had dry, flaky skin on his back..."
               </h3>
               <p className="text-lg mt-5 font-[300]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Necessitatibus ab veritatis id et! Ipsum, illo! Voluptate quia
-                hic eos fuga deserunt, iure dolore unde nesciunt? Laudantium
-                reiciendis culpa eius suscipit.
+                My German shepherd had dry, flaky skin on his back, and nothing
+                seemed to work. After using this cream, I noticed a difference
+                within a week.
               </p>
               <p className="text-lg mt-5 font-[300]">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Explicabo eveniet provident quo eum animi consectetur.
+                His coat is shiny, and the flakes are gone. I'm so impressed
+                with this product!
               </p>
               <div className="grid grid-cols-12 gap-3 mt-10">
                 <div className="col-span-6 font-semibold">Jessica Miller</div>
@@ -148,13 +147,14 @@ export default function Home() {
               <div className="bg-gray-100 p-5">
                 <Image src={stars} alt="stars" />
                 <h3 className="py-3 font-semibold text-lg">
-                  I never thought it could really work so well
+                  No more fur all over the house!
                 </h3>
                 <p className="font-[300] text-[14px]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Sapiente repudiandae ipsa cupiditate magni. Dolorum, iure
-                  nobis enim distinctio, odit nesciunt, et quod nulla soluta
-                  placeat voluptas ad quisquam id eaque?
+                  I used to find my dog's hair everywhere—on the couch, my
+                  clothes, even in my car! After using this cream for two weeks,
+                  the shedding has drastically reduced. I can finally cuddle my
+                  dog without worrying about being covered in fur. Highly
+                  recommend!
                 </p>
                 <div className="grid grid-cols-12 gap-3 mt-10">
                   <div className="col-span-6 font-semibold">Jessica Miller</div>
@@ -175,13 +175,14 @@ export default function Home() {
               <div className="bg-gray-100 p-5">
                 <Image src={stars} alt="stars" />
                 <h3 className="py-3 font-semibold text-lg">
-                  I never thought it could really work so well
+                  Amazing results for my Labrador
                 </h3>
                 <p className="font-[300] text-[14px]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Sapiente repudiandae ipsa cupiditate magni. Dolorum, iure
-                  nobis enim distinctio, odit nesciunt, et quod nulla soluta
-                  placeat voluptas ad quisquam id eaque?
+                  Labs shed a lot, and I thought it was just something I'd have
+                  to live with. But after trying this cream, I've noticed way
+                  less fur during brushing. His coat looks shiny and healthy,
+                  and my vacuum isn't working overtime anymore. Thank you,
+                  Biopeta!
                 </p>
                 <div className="grid grid-cols-12 gap-3 mt-10">
                   <div className="col-span-6 font-semibold">Jessica Miller</div>
@@ -203,13 +204,14 @@ export default function Home() {
               <div className="bg-gray-100 p-5">
                 <Image src={stars} alt="stars" />
                 <h3 className="py-3 font-semibold text-lg">
-                  I never thought it could really work so well
+                  Perfect for shedding season
                 </h3>
                 <p className="font-[300] text-[14px]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Sapiente repudiandae ipsa cupiditate magni. Dolorum, iure
-                  nobis enim distinctio, odit nesciunt, et quod nulla soluta
-                  placeat voluptas ad quisquam id eaque?
+                  My husky sheds like crazy twice a year, and it’s always been a
+                  nightmare to manage. This cream made a huge difference! I’ve
+                  been using it for about a month, and the shedding has gone
+                  down noticeably. Even my groomer commented on how much better
+                  his coat looks.
                 </p>
                 <div className="grid grid-cols-12 gap-3 mt-10">
                   <div className="col-span-6 font-semibold">Jessica Miller</div>

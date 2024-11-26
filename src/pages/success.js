@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import logo from "../assets/icons/cortiway2.png";
+import logo from "../assets/logo/logo2.png";
 import { SmallContainer } from "@/components/SmallContainer";
 import { FONTS } from "@/styles/fonts";
 import { COLORS } from "@/styles/colors";
@@ -17,7 +17,7 @@ export default function Success() {
   return (
     <SmallContainer>
       <div className="flex items-center justify-center">
-        <Image src={logo} width={152} height={30} alt="logo" />
+        <Image src={logo} width={152} height={30} alt="logo" className="pt-5" />
       </div>
       <div className="mt-[100px]">
         <h1 className="text-2xl font-semibold text-center mb-10">

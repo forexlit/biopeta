@@ -23,7 +23,7 @@ export const PRODUCTS = [
         ],
         image: "/product/biopeta/2free.png",
 
-        orderUrl: "https://buy.stripe.com/fZe7uDd8R9ubcpifZ8",
+        orderUrl: "https://buy.stripe.com/9AQaFk35bg3H0Fy6oo",
       },
     ],
   },
@@ -48,7 +48,7 @@ export const PRODUCTS = [
           },
         ],
         image: "/product/biopeta/3free.png",
-        orderUrl: "https://buy.stripe.com/dR62aj1q95dVbledR1",
+        orderUrl: "https://buy.stripe.com/6oEcNsfRX5p35ZS9AB",
       },
     ],
   },
@@ -73,7 +73,7 @@ export const PRODUCTS = [
         ],
         image: "/product/biopeta/1left.png",
 
-        orderUrl: "https://buy.stripe.com/eVa5mvecVfSz0GAaER",
+        orderUrl: "https://buy.stripe.com/28o6p4eNTbNr1JCfZ0",
       },
     ],
   },

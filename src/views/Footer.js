@@ -56,11 +56,10 @@ export const Footer = () => {
         <Disclaimer>
           Disclaimer: Content and statements on this website have not been
           evaluated by the Food and Drug Administration. This product is not
-          intended to diagnose, treat, cure, or prevent any disease. It should
-          not be substituted for medical advice or medical intervention. Please
-          consult a qualified healthcare provider when making medical decisions.
-          Exercise and a healthy diet are necessary to achieve and maintain
-          weight loss.
+          intended to diagnose, treat, cure, or prevent any disease. It is not a
+          substitute for veterinary advice or care. Please consult a qualified
+          veterinarian for any concerns regarding your pet's health or before
+          using this product if your pet has any medical conditions.
         </Disclaimer>
       </div>
     </FooterContainer>
