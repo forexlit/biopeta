@@ -1,29 +1,27 @@
 export const PRODUCTS = [
   {
     id: 1,
-    title: "Anti-Shedding Cream + Waterless Shampoo",
-    subtitle: "Great for building new habits",
+    title: "2 x Anti-Shedding Cream 3.3oz (93g)",
+    subtitle: "Great for Regular Use",
     badge: "Most popular",
     popular: true,
+    gift: true,
     border: "border border-2 border-yellow-300",
     options: [
       {
         optionId: 11,
         title: "3-Months Supply",
         bottles: 3,
-        price: 43.99,
-        oldPrice: 59.99,
+        price: 99.99,
+        oldPrice: 139.99,
         total: 131.97,
         oldTotal: 179.97,
         list: [
           {
-            title: "3 bottles delivered",
-          },
-          {
-            title: "90 servings",
+            title: "2 bottles delivered",
           },
         ],
-        image: "/product/biopeta/11.png",
+        image: "/product/biopeta/2free.png",
 
         orderUrl: "https://buy.stripe.com/fZe7uDd8R9ubcpifZ8",
       },
@@ -31,34 +29,32 @@ export const PRODUCTS = [
   },
   {
     id: 2,
-    title: "Anti-Shedding Cream + Waterless Shampoo",
-    subtitle: "For achieving sustainable results",
+    title: "3 x Anti-Shedding Cream 3.3oz (93g)",
+    subtitle: "For sustainable results",
     badge: "Best value",
     border: "border-2 border-green-400",
+    gift: true,
     options: [
       {
         optionId: 21,
         title: "6-Months Supply",
-        price: 33.99,
-        oldPrice: 59.99,
+        price: 159.99,
+        oldPrice: 205,
         total: 203.94,
         oldTotal: 359.94,
         list: [
           {
-            title: "6 bottles delivered",
-          },
-          {
-            title: "180 servings",
+            title: "3 bottles delivered",
           },
         ],
-        image: "/product/biopeta/11.png",
+        image: "/product/biopeta/3free.png",
         orderUrl: "https://buy.stripe.com/dR62aj1q95dVbledR1",
       },
     ],
   },
   {
     id: 3,
-    title: "Anti-Shedding Cream + Waterless Shampoo",
+    title: "1 x Anti-Shedding Cream 3.3oz (93g)",
     subtitle: "Ideal solution for trying out",
     badge: "",
     border: "border-2 border-green-400",
@@ -67,18 +63,15 @@ export const PRODUCTS = [
         optionId: 31,
         title: "1-Month Supply",
         price: 59.99,
-        oldPrice: 59.99,
-        total: 59.99,
+        oldPrice: 69.99,
+        total: 69.99,
 
         list: [
           {
             title: "1 bottle delivered",
           },
-          {
-            title: "30 servings",
-          },
         ],
-        image: "/product/biopeta/11.png",
+        image: "/product/biopeta/1left.png",
 
         orderUrl: "https://buy.stripe.com/eVa5mvecVfSz0GAaER",
       },

@@ -159,7 +159,6 @@ export const LoadingContainer = styled.div`
   text-align: center;
   h1 {
     padding: 30px 0px;
-    font-family: ${FONTS.primary};
     font-weight: 600;
     line-height: 1.2;
     @media (max-width: ${sizes.sm}) {

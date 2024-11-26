@@ -4,8 +4,8 @@ import Image from "next/image";
 import shipping from "../assets/icons/shipping.svg";
 import usa from "../assets/icons/usa.svg";
 
-export const Timer = ({ margin }) => {
-  const [timeLeft, setTimeLeft] = useState(14 * 60 + 59); // Time in seconds
+export const Timer = ({ img, margin }) => {
+  const [timeLeft, setTimeLeft] = useState(29 * 60 + 59); // Time in seconds
   const [isMounted, setIsMounted] = useState(false); // Check if component is mounted
 
   useEffect(() => {
@@ -29,9 +29,47 @@ export const Timer = ({ margin }) => {
   }
 
   return (
-    <div className="border bg-pink-100 border-pink-600 rounded mt-5">
-      <TimerContainer margin={margin}>
-        <Image src={shipping} width={25} height={25} alt="Discount" />
+    <div className="border  border-red-600 rounded mt-5 p-2 z-[100] bg-white">
+      <div className="grid grid-cols-12 gap-2">
+        <div className="col-span-2">
+          <Image src={img} height={60} alt="Discount" />
+        </div>
+        <div className="col-span-7">
+          <strong className="flex block items-center text-xs md:text-[15px]">
+            Get Your Free Waterless Shampoo – For a Limited Time Only! ✨
+          </strong>
+          <p className="text-xs md:text-sm mt-1">
+            1 x BioPeta Waterless Shampoo 4 fl oz (118 g.){" "}
+          </p>
+          <div className="text-xs md:text-sm">
+            <span className="line-through text-gray-500">$29.99</span>{" "}
+            <span className="font-semibold">Free</span>
+          </div>
+          <div className="flex items-center font-thin"></div>
+        </div>
+        <div className="col-span-3 text-lg md:text-3xl">
+          <Time>
+            <div>
+              <h1 className="text-red-600">
+                {minutes}
+                {/* <span>Min</span> */}
+              </h1>
+            </div>
+
+            <Dots>
+              <h1 className="text-red-600">:</h1>
+            </Dots>
+            <div>
+              <h1 className="text-red-600">
+                {seconds.toString().padStart(2, "0")}
+                {/* <span>Sec</span> */}
+              </h1>
+            </div>
+          </Time>
+        </div>
+      </div>
+      {/* <TimerContainer margin={margin}>
+        <Image src={img} width={25} height={25} alt="Discount" />
         <p>
           <strong className="flex block items-center">
             Order now and get it delivered in 3-5 days for free!
@@ -61,7 +99,7 @@ export const Timer = ({ margin }) => {
             </h1>
           </div>
         </Time>
-      </TimerContainer>
+      </TimerContainer> */}
     </div>
   );
 };
@@ -89,9 +127,9 @@ export const Time = styled.div`
   justify-content: center;
 
   h1 {
-    font-size: 25px;
     padding: 5px;
     text-align: center;
+    font-weight: 600;
     span {
       font-size: 11px;
       display: block;
@@ -102,5 +140,5 @@ export const Time = styled.div`
 `;
 
 export const Dots = styled.div`
-  margin-top: -18px;
+  margin-top: 0px;
 `;

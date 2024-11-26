@@ -1,36 +1,18 @@
 import React from "react";
 import Image from "next/image";
 import { REVIEWS } from "@/content/reviews";
-import threeProduct from "../assets/products/colon/3.jpg";
+import threeProduct from "../../public/product/biopeta/3.png";
 import sixProduct from "../assets/products/colon/6.jpg";
-import oneProduct from "../assets/products/colon/1.jpg";
+import twoProduct from "../../public/product/biopeta/2.png";
+import oneProduct from "../../public/product/biopeta/1.png";
 import verified from "../assets/icons/verified2.svg";
 import starYellow from "../assets/icons/star-yellow.svg";
 import thumb from "../assets/icons/thumb.svg";
-import moneyback from "../assets/icons/money.png";
-import { Button } from "./Button";
-import ba1 from "../../public/ba/f1.jpg";
-import ba2 from "../../public/ba/2.jpg";
-import ba3 from "../../public/ba/3.jpg";
-import ba4 from "../../public/ba/4.jpg";
-import ba5 from "../../public/ba/5.jpg";
-import ba6 from "../../public/ba/6.jpg";
-import ba0 from "../../public/ba/ba0.jpg";
-
-import ba7 from "../../public/ba/7.jpg";
-import ba8 from "../../public/ba/8.jpg";
-import ba10 from "../../public/ba/ba10.png";
-import ba12 from "../../public/ba/ba11.jpg";
-import ba13 from "../../public/ba/ba12.jpg";
-import ba14 from "../../public/ba/ba14.jpg";
-import ba15 from "../../public/ba/ba15.png";
 
 import ba11 from "../../public/ba/11.jpg";
 import chart from "../assets/images/chart.png";
 import r1 from "../../public/reviews/r3.png";
 import flag from "../assets/icons/flag.svg";
-import VideoPlayer from "./Video";
-
 const ReviewsWithProduct = () => {
   return (
     <div>
@@ -38,7 +20,7 @@ const ReviewsWithProduct = () => {
         <div className="container mx-auto mb-10">
           <div className="grid grid-cols-12 gap-4 bg-[#1d97bd] rounded-b-lg ">
             <div className="col-span-12 md:col-span-3 p-5 pb-0">
-              <div className="h-[130px] md:h-[200px] relative">
+              <div className="h-[100px] md:h-[200px] relative">
                 <Image
                   src={chart}
                   fill
@@ -47,18 +29,16 @@ const ReviewsWithProduct = () => {
                 />
               </div>
             </div>
-            <div className="col-span-12 md:col-span-9 text-center md:text-left p-5 pt-5">
+            <div className="col-span-12 md:col-span-9 text-center md:text-left p-5 pt-0 md:pt-5">
               <span className="text-5xl md:text-[80px] font-semibold text-white leading-none">
                 86%{" "}
               </span>
               <span className="text-white text-2xl block uppercase">
-                of users experienced weight loss*
+                of consumers noticed signifantly less shedding*
               </span>
               <div className=" py-10 text-white text-sm md:text-lg">
-                *In a survey involving 2,203 participants, 86% of women who
-                added Cortiway Premium to their morning routine started losing
-                weight in the first 30 days... without any changes to their diet
-                or exercise.
+                *this statement is based on data collected from a post-purchase
+                survey conducted in June 2024.
               </div>
             </div>
           </div>
@@ -107,7 +87,7 @@ const ReviewsWithProduct = () => {
                             )}
                             {review.product === 6 && (
                               <Image
-                                src={sixProduct}
+                                src={twoProduct}
                                 height={100}
                                 alt="product"
                               />
@@ -122,7 +102,7 @@ const ReviewsWithProduct = () => {
                           </div>
                         </div>
                         <div className="col-span-6">
-                          {review.product === 1 && (
+                          {/* {review.product === 1 && (
                             <p className="text-xs">1-Month Supply</p>
                           )}
                           {review.product === 3 && (
@@ -130,9 +110,9 @@ const ReviewsWithProduct = () => {
                           )}
                           {review.product === 6 && (
                             <p className="text-xs">6-Months Supply</p>
-                          )}
+                          )} */}
                           <h4 className="font-semibold leading-none">
-                            Cortiway Premium
+                            BioPeta Anti-Shedding Cream
                           </h4>
                         </div>
                       </div>

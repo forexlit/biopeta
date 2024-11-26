@@ -61,7 +61,7 @@ const WithAndWithout = () => {
                       className="mr-5"
                     />
                   </div>
-                  Your dog’s fur looks lifeless and feels rough.
+                  Your dog's fur looks lifeless and feels rough.
                 </li>
                 <li>
                   {" "}
@@ -74,7 +74,7 @@ const WithAndWithout = () => {
                       className="mr-5"
                     />
                   </div>
-                  Endless brushing sessions that still don’t stop the shedding.
+                  Endless brushing sessions that still don't stop the shedding.
                 </li>
                 <li>
                   {" "}

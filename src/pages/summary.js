@@ -155,7 +155,18 @@ const Summary = () => {
                   <div className=" bg-green-200 h-6 w-full mb-2 relative">
                     {shedding && shedding === "Moderate shedding" && (
                       <div className="absolute w-2 rounded-full h-[50px] bg-white left-1/2 transform -translate-x-1/2 top-[-8px]">
-                        <div className="w-[3px] bg-red-600 h-[40px] mx-auto rounded-xl "></div>
+                        <div className="w-[3px] bg-red-600 h-[40px] mx-auto rounded-xl relative">
+                          <div className="absolute w-10 h-10 rounded-full top-[-40px] left-[-18px] bg-white">
+                            <div className="relative w-10 h-10 rounded-full border-2 shadow-lg">
+                              <Image
+                                src={furAlot}
+                                alt="Fur"
+                                className="rounded-full"
+                                fill
+                              />
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     )}
                   </div>
