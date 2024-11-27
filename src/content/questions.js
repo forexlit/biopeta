@@ -68,15 +68,8 @@ export const QUESTIONS = [
     multiple: false,
     options: [
       {
-        label: "Barely sheds",
-        value: "Barely sheds",
-        points: 1,
-        icon: "",
-        link: "",
-      },
-      {
-        label: "Moderate shedding",
-        value: "Moderate shedding",
+        label: "It feels like I live in a fur storm",
+        value: "It feels like I live in a fur storm",
         points: 0,
         icon: "",
         link: "",
@@ -89,9 +82,16 @@ export const QUESTIONS = [
         link: "",
       },
       {
-        label: "It feels like I live in a fur storm",
-        value: "It feels like I live in a fur storm",
+        label: "Moderate shedding",
+        value: "Moderate shedding",
         points: 0,
+        icon: "",
+        link: "",
+      },
+      {
+        label: "Barely sheds",
+        value: "Barely sheds",
+        points: 1,
         icon: "",
         link: "",
       },
