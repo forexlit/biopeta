@@ -80,7 +80,7 @@ export default function Two() {
           <Image src={sale} alt="Sale" height={25} className="mr-4" />
         </div>
         <span>BLACK FRIDAY MONTH: </span>
-        <strong className="ml-2"> UP TO -29% OFF!</strong>
+        <strong className="ml-2"> UP TO -52% OFF!</strong>
       </div>
       <div className="py-0 md:py-5">
         <TopNavigation />
