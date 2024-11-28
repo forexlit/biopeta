@@ -12,8 +12,8 @@ export const PRODUCTS = [
         optionId: 11,
         title: "3-Months Supply",
         bottles: 3,
-        price: 99.99,
-        oldPrice: 139.99,
+        price: 79.98,
+        oldPrice: 139.98,
         total: 131.97,
         oldTotal: 179.97,
         list: [
@@ -23,7 +23,7 @@ export const PRODUCTS = [
         ],
         image: "/product/biopeta/2free.png",
 
-        orderUrl: "https://buy.stripe.com/9AQaFk35bg3H0Fy6oo",
+        orderUrl: "https://buy.stripe.com/3csdRw7lrbNr5ZS9AE",
       },
     ],
   },
@@ -38,8 +38,8 @@ export const PRODUCTS = [
       {
         optionId: 21,
         title: "6-Months Supply",
-        price: 159.99,
-        oldPrice: 205,
+        price: 99.99,
+        oldPrice: 209.97,
         total: 203.94,
         oldTotal: 359.94,
         list: [
@@ -48,7 +48,7 @@ export const PRODUCTS = [
           },
         ],
         image: "/product/biopeta/3free.png",
-        orderUrl: "https://buy.stripe.com/6oEcNsfRX5p35ZS9AB",
+        orderUrl: "https://buy.stripe.com/fZe9Bg0X38Bfewo6ot",
       },
     ],
   },
@@ -62,7 +62,7 @@ export const PRODUCTS = [
       {
         optionId: 31,
         title: "1-Month Supply",
-        price: 59.99,
+        price: 39.99,
         oldPrice: 69.99,
         total: 69.99,
 
@@ -73,7 +73,7 @@ export const PRODUCTS = [
         ],
         image: "/product/biopeta/1left.png",
 
-        orderUrl: "https://buy.stripe.com/28o6p4eNTbNr1JCfZ0",
+        orderUrl: "https://buy.stripe.com/4gw28ObBH4kZ4VO9AD",
       },
     ],
   },
